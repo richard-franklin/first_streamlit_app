@@ -46,11 +46,13 @@ try:
   if streamlit.button('Add Fruit to the List: '):
       my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
       fruit_add_call = insert_row_snowflake(add_my_fruit)
+      my_cnx.close()
       streamlit.write(fruit_add_call)
-  streamlit.header("The fruit load list contains:")
-  if streamlit.button('Get Fruit Load List: '):
+  streamlit.header("View Our Fruit List - Add Your Favorites:")
+  if streamlit.button('Get Fruit List: '):
      my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
      my_data_rows = get_fruit_load_list()
+      my_cnx.close()
      streamlit.dataframe(my_data_rows)
   
    
