@@ -22,7 +22,7 @@ fruits_to_show = my_fruit_list.loc[fruit_selected]
 streamlit.dataframe(fruits_to_show)
 
 streamlit.header("Fruityvice Fruit Advice!")
-def fuction_call(f_choice):
+def function_call(f_choice):
    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+f_choice)
    fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
    return fruityvice_normalized
