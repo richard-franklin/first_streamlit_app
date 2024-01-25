@@ -26,5 +26,5 @@ Below are the steps to follow in order to run the framework:
 python historical_query_generator.py
 ```
 - Step 3: The script execution pauses right at the beginning, prompting to enter either **S** or **D**.
-..-**S** is entered for generating configurations for master load architecture.
-..-**D** is entered for those that doesn't use the master load architecture.
+<br> -**S** is entered for generating configurations for master load architecture.
+<br> -**D** is entered for those that doesn't use the master load architecture.
