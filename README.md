@@ -18,10 +18,13 @@ This CSV file is used to take the necessary details of the tables whose configur
 3. **incremental_query_generator.py**:<br>
    This file is run to generate all the update queries for the already inserted configurations and also some new configurations.<br>
    
-##Usage
+## Usage
 Below are the steps to follow in order to run the framework:
 - Step 1: Insert the details of the tables whose configurations are to be generated in the **input.csv** file.
 - Step 2: Run the script using the **historical_query_generator.py** (for new entry) or **incremental_query_generator.py**(for after historical load) file.
 ```bash
 python historical_query_generator.py
 ```
+- Step 3: The script execution pauses right at the beginning, prompting to enter either **S** or **D**.
+..-**S** is entered for generating configurations for master load architecture.
+..-**D** is entered for those that doesn't use the master load architecture.
