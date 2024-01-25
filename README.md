@@ -12,5 +12,4 @@ _The framework has been tested for python versions 3.11 and below._
 ## Components
 Below are the key components of the framework:
 1. **input.csv file**:
-
 This CSV file is used to take the necessary details of the tables whose configurations are to be generated.
