@@ -12,8 +12,8 @@ _The framework has been tested for python versions 3.11 and below._
 ## Components
 Below are the key components of the framework:
 1. **input.csv**:<br>
-This CSV file is used to take the necessary details of the tables whose configurations are to be generated.
+This CSV file is used to take the necessary details of the tables whose configurations are to be generated.<br>
 2. **historical_query_generator.py**:<br>
-   This file is run to generate all the configurations needed for the first time full load of the table
+   This file is run to generate all the configurations needed for the first time full load of the table.<br>
 3. **incremental_query_generator.py**:<br>
-   This file is run to generate all the update queries for the already inserted configurations and also some new configurations.
+   This file is run to generate all the update queries for the already inserted configurations and also some new configurations.<br>
