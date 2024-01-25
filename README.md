@@ -29,7 +29,7 @@ Below are the key components of the framework:
 ```bash
 python historical_query_generator.py
 ```
-*ensp*or
+&ensp; or
 ```bash
 python incremental_query_generator.py
 ```
