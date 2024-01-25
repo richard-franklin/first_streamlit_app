@@ -11,5 +11,9 @@ pip install pandas
 _The framework has been tested for python versions 3.11 and below._
 ## Components
 Below are the key components of the framework:
-1. **input.csv file**:
+1. **input.csv**:
 This CSV file is used to take the necessary details of the tables whose configurations are to be generated.
+2. **historical_query_generator.py**:
+   This file is run to generate all the configurations needed for the first time full load of the table
+3. **incremental_query_generator.py**:
+   This file is run to generate all the update queries for the already inserted configurations and also some new configurations.
