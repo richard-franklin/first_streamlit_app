@@ -21,14 +21,22 @@ Below are the key components of the framework:
    This file contains the templates of all the queries that are to be generated.
    
 ## Usage
-Below are the steps to follow in order to run the framework:
-- Step 1: Insert the details of the tables whose configurations are to be generated in the **input.csv** file.
-- Step 2: Run the script using the **historical_query_generator.py** (for new entry) or **incremental_query_generator.py**(for after historical load) file.
+### Framework Execution Steps:
+1. **Input Details:**
+   - Insert table details in the **input.csv** file.
+2. **Run Script:**
+   - Execute the script using:
 ```bash
 python historical_query_generator.py
 ```
-- Step 3: The script execution pauses right at the beginning, prompting to enter either **S** or **D**.
-<br>      **S** is entered for generating configurations for master load architecture.
-<br>      **D** is entered for those that doesn't use the master load architecture.
-- Step 4: The output of each script will be available in either **historical_config** folder or **incremental_config** folder based on the script that was run.
+     or
+```bash
+python incremental_query_generator.py
+```
+3. **Script Interaction:**
+   - The script pauses at the start, prompting to enter either **S** for master load architecture configurations or **D** for others.
+4. **Output Location:**
+   - The output is stored in:
+     - **historical_config** folder (for historical load script)
+     - **incremental_config** folder (for incremental load script).
 ##
